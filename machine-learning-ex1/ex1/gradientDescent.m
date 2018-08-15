@@ -20,7 +20,7 @@ for iter = 1:num_iters
 htheta = X * theta;
 for i = 1:length(theta)
     theta(i) = theta(i) - alpha / m * sum((htheta - y) .* X(:,i));
-end;
+end
 
     % ============================================================
 
